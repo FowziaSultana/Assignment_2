@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
+
+/* ---------------------------------------------common css start------------------------------------------- */
+* {
+  margin: 0px;
+  font-family: "Work Sans", sans-serif;
+}
+.hide {
+  display: none !important;
+}
+.container {
+  padding: 50px 150px;
+}
+p {
+  color: #727272;
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+
+.primary_btn {
+  width: 140px;
+  height: 50px;
+  background: #ff900e;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+}
+.bold {
+  font-weight: bold;
+}
+.orange_colour {
+  color: #ff900e;
+}
+.ash_colour {
+  color: #727272;
+}
+.large_text {
+  font-size: 34px;
+}
+/* ---------------------------------------------Header css start------------------------------------------- */
+header {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_title,
+title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #131313;
+}
+.nav_opt {
+  display: flex;
+  justify-content: space-around;
+}
+.nav_opt li {
+  list-style: none;
+  padding: 0px 10px;
+}
+.nav_opt li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #424242;
+}
+.banner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner_details {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  width: 662px;
+}
+.banner_details h1 {
+  font-size: 50px;
+}
+
+.banner_img img {
+  width: 1140px;
+  height: 500px;
+}
+
+/* ---------------------------------------------Header css end------------------------------------------- */
+
+/* ---------------------------------------------Feature css start------------------------------------------- */
+.our_features {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.features_images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+.feature_image img {
+  height: 250px;
+  width: 250px;
+  border-radius: 5px;
+}
+.features_details {
+  width: 530px;
+}
+.features_details h1 {
+  font-size: xxx-large;
+}
+
+/* ---------------------------------------------Feature css End------------------------------------------- */
+
+/* ---------------------------------------------Experience css start------------------------------------------- */
+
+.architect_experiences {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.architect_descriptions {
+  width: 450px;
+}
+.architect_descriptions p {
+  font-size: 14px;
+}
+
+.description_head > h1 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #131313;
+  padding-left: 10px;
+  border-left: 5px solid #ff900e;
+}
+.list_of_descriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.a_description {
+  padding: 20px 10px 0px 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+}
+
+.architect_image img {
+  padding-left: 160px;
+  width: 507px;
+}
+.architect_image > button {
+  width: 170px;
+  height: 120px;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  position: relative;
+  top: -50px;
+  left: 50px;
+}
+
+/* ---------------------------------------------Experience css end------------------------------------------- */
+/* ---------------------------------------------Facts css start------------------------------------------- */
+
+.fact_descriptions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 100px;
+  padding: 50px;
+}
+.a_fact {
+  height: 150px;
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  text-align: center;
+  padding-top: 30px;
+  opacity: 0.8;
+  transition: transform 1s, box-shadow 1.5s, opacity 1.5s;
+}
+.a_fact:hover {
+  transform: scale(1.3);
+  box-shadow: inset 0 0 0 18px #ff900e;
+  opacity: 1;
+}
+.a_fact > h2 {
+  margin: 10px 0px;
+}
+.a_fact > h5 {
+  color: #727272;
+}
+/* ---------------------------------------------Facts css end------------------------------------------- */
+
+/* ---------------------------------------------Expertise css start------------------------------------------- */
+
+.expertise_area h1 {
+  font-weight: 700;
+  font-size: 30px;
+  padding: 30px 0px;
+  text-align: center;
+}
+.list_expertises {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.expertise {
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  text-align: center;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f0ebe8;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.8s ease-in-out;
+}
+
+.expertise:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  color: #ff900e;
+  font-size: 20px;
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  white-space: nowrap;
+}
+
+/* ---------------------------------------------Expertise css end------------------------------------------- */
+
+/* ---------------------------------------------Sponsors css start------------------------------------------- */
+
+.our_sponsors_head {
+  text-align: center;
+}
+.sponsors_list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 20px 0px;
+}
+.a_sponsor > img {
+  filter: grayscale(100%);
+}
+
+/* ---------------------------------------------Sponsors css end------------------------------------------- */
+/* ---------------------------------------------Footer css start------------------------------------------- */
+
+footer {
+  text-align: center;
+}
+footer > p {
+  background-color: rgba(255, 144, 14, 0.1);
+  height: 70px;
+  padding-top: 50px;
+}
+/* ---------------------------------------------Footer css start------------------------------------------- */
+
+/* ----------------------------------------------mobile responsive start -----------------------------------*/
+@media only screen and (max-width: 564px) {
+  /* ----------------------common css start */
+
+  .container {
+    padding: 20px 30px;
+  }
+  section {
+    margin-top: 20px;
+  }
+  /* ----------------------header responsive start */
+
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav_title {
+    font-size: 14px;
+  }
+  .nav_opt {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+  .nav_opt li {
+    list-style: none;
+    padding: 5px 0px;
+  }
+
+  .banner {
+    justify-content: center;
+  }
+
+  .banner_details {
+    width: 100%;
+  }
+  .banner_details h1 {
+    font-size: 35px;
+  }
+
+  .banner_img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ----------------------Features responsive start */
+
+  .our_features {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .features_images {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 10px;
+  }
+
+  .features_details {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* ----------------------Architect experience responsive start */
+  .architect_experiences {
+    flex-direction: column;
+  }
+  .architect_descriptions {
+    width: 100%;
+  }
+  .architect_image img {
+    padding-left: 0px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .large_text {
+    font-size: 20px;
+  }
+  .architect_image > button {
+    top: 20px;
+    left: 0px;
+    width: 140px;
+    height: 50px;
+    padding: 4px;
+    font-size: 14px;
+  }
+
+  /* ----------------------Facts responsive start */
+  .fact_descriptions {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+  }
+  .a_fact {
+    transition: transform 0.5s, box-shadow 0.8s, opacity 0.8s;
+  }
+  .a_fact:hover {
+    transform: scale(1.09);
+    box-shadow: 0 0 0 5px #ff900e;
+    opacity: 1;
+  }
+  /* ----------------------Expertise responsive start */
+  .list_expertises {
+    flex-direction: column;
+  }
+  .expertise img {
+    width: 100%;
+  }
+
+  .text {
+    padding: 0px 10px;
+    font-size: 15px;
+    top: 35%;
+    left: 15%;
+  }
+
+  /* ----------------------Sponsors responsive start */
+  .our_sponsors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sponsors_list {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+  .a_sponsor > img {
+    scale: 0.8;
+  }
+
+  /* ----------------------Footer responsive start */
+
+  footer {
+    padding: 0px !important;
+  }
+  footer > p {
+    padding-top: 25px;
+    margin-bottom: 0px;
+  }
+}
+
+/* -------------------------------------------mobile responsive end */
